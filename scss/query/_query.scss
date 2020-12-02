@@ -1,0 +1,250 @@
+/* QUERY CELUS */
+@media only screen and (max-width: 639px) {
+
+    /* navbar no mobile */
+    .header__nav__notMobile {
+        display: none;
+    }
+
+    /* navbar mobile */
+
+    .header__nav__mobile {
+        overflow: hidden;
+        position: fixed;
+        background-image: linear-gradient(to top,
+                #000000da,
+                rgb(0, 0, 0));
+
+        #enlaces {
+            display: none;
+            position: fixed;
+            background: #000000;
+            height: 100vh;
+        }
+
+        a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .icon {
+            color: #F27983;
+        }
+
+        .active {
+            color: #9AD9BB;
+            font-size: x-large;
+            position: relative;
+            top: .8rem;
+        }
+    }
+
+    .topnav #enlaces a {
+        display: flex;
+        justify-content: center;
+        margin: .5rem;
+        font-size: x-large;
+    }
+
+
+    .topnav a.icon {
+        font-size: x-large;
+        position: fixed;
+        display: block;
+        right: 0;
+        top: .5rem;
+    }
+
+    // footer
+
+    .footer {
+        font-size: x-large;
+        display: block;
+        text-align: center;
+
+        .footer__fly,
+        .footer__redes {
+            padding: .5rem;
+        }
+    }
+
+    /* QUERY INDEX */
+
+    body {
+        grid-template-rows: .1fr 3fr .5fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+
+    .main {
+
+        .main__s1,
+        .main__s3 {
+            color: white;
+            border-left: .15rem solid #9AD9BB;
+            padding: 1rem;
+        }
+
+        .main__s2 {
+            color: white;
+            border-right: .1rem solid #9AD9BB;
+            padding: 1rem;
+        }
+    }
+
+
+    /* QUERY PRODUCTOS */
+
+    .productos {
+        justify-content: center;
+        z-index: 1;
+
+        .listado img {
+            width: 15rem;
+        }
+
+    }
+
+    /* query pedidos */
+
+    .pedido {
+        padding: 2rem;
+    }
+
+    .pedido,
+    .contacto {
+        .form {
+            textarea {
+                min-width: 250px;
+                max-width: 500px;
+            }
+        }
+
+        .listaPedido select {
+            margin: .5rem;
+            width: 70%;
+        }
+    }
+
+}
+
+/* QUERY TABLETS */
+@media only screen and (min-width: 640px) {
+
+    .header__nav__mobile {
+        display: none;
+    }
+
+
+    /* query index */
+
+    .footer {
+        font-size: x-large;
+        display: block;
+        text-align: center;
+
+        .footer__fly,
+        .footer__redes {
+            padding: .5rem;
+        }
+    }
+
+    body {
+        grid-template-rows: .8fr 5fr 1fr;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+
+    .main {
+
+        .main__s1,
+        .main__s3 {
+            color: white;
+            font-size: x-large;
+            border-left: .15rem solid #9AD9BB;
+            padding: 1rem;
+        }
+
+        .main__s2 {
+            color: white;
+            font-size: x-large;
+            border-right: .1rem solid #9AD9BB;
+            padding: 1rem;
+        }
+    }
+
+    /* QUERY PRODUCTOS */
+    .productos {
+        display: grid;
+        grid-template-rows: .1fr 1fr .1fr;
+        justify-content: center;
+
+        .listado {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .header {
+            padding: 2rem;
+            font-size: 3rem;
+        }
+
+    }
+}
+
+/* Dekstop */
+@media only screen and (min-width: 992px) {
+
+    /* query index */
+    .header__nav__notMobile {
+        font-size: xx-large;
+    }
+
+    .main {
+
+        .main__s1,
+        .main__s2,
+        .main__s3 {
+            padding: 5rem;
+            font-size: x-large;
+        }
+    }
+
+    /* query productos */
+    .productos {
+        .listado {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .header {
+            padding: 10rem;
+            font-size: 4rem;
+        }
+    }
+
+    .pedido,
+    .contacto {
+        .form {
+            text-align: center;
+            textarea {
+                min-width: 650px;
+                max-height: 400px;
+            }
+        }
+    }
+}

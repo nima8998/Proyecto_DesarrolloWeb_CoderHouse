@@ -1,0 +1,29 @@
+.nosotros {
+    display: grid;
+    grid-template-rows: .2fr .1fr .1fr;
+    row-gap: 3rem;
+    grid-template-areas:
+        "logo"
+        "nos1"
+        "nos2"
+    ;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    .nos1 {
+        grid-area: nos1;
+    }
+
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+    }
+
+    .nos2 {
+        grid-area: nos2;
+    }
+
+}

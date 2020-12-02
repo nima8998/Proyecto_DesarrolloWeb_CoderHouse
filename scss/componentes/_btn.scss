@@ -1,0 +1,27 @@
+// BOTONES FORMS
+
+$btns: (outline-primary: $secondColor,
+    outline-danger: $mainColor);
+
+
+@each $btn,
+$color in $btns {
+    .btn-#{$btn} {
+        color: $color;
+        border-color: $color;
+        &:hover{
+        border-color: $color;
+        }
+    }
+}
+
+$btnsHover:(outline-primary: $secondColorHover,
+    outline-danger: $mainColorHover);
+
+@each $btn,
+$color in $btnsHover {
+    .btn-#{$btn}:hover {
+        background-color: $color;
+        color: black;
+    }
+}

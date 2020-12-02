@@ -1,0 +1,39 @@
+.productos {
+    display: grid;
+    grid-template-rows: .3fr 1fr .2fr;
+    grid-gap: .2rem;
+    grid-template-areas:
+        "header"
+        "listado"
+        "footer"
+    ;
+    font-family: 'Montserrat',
+        sans-serif;
+
+    .header {
+        grid-area: header;
+        color: white;
+
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+
+    .listado {
+        grid-area: listado;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+
+
+        img {
+            width: 25rem;
+            justify-content: space-around;
+        }
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+
+}

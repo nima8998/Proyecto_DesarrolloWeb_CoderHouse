@@ -1,0 +1,11 @@
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-rows: repeat(3 .8fr);
+    row-gap: 3rem;
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section3"
+    ;
+}

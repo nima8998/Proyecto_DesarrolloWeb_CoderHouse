@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="cacao, cacaoseed, seed, ganaches, ganache de chocolate, bombones, bombones, chocolate, frutas">
+    <meta name="description" content="Contactate con nosotros, Cacao Seed. ">
+    <meta name="author" content="Nicolas Mauna">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pruebaScss.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Cacao Seed: Contacto</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="container-fluid topnav header__nav__mobile">
+            <a href="#" class="active">Cacao Seed</a>
+            <!-- enlaces -->
+            <div class="container-fluid header__nav__mobile" id="enlaces">
+                <a href="index.html" class="nav--enlaces">Inicio</a>
+                <a href="productos.html" class="nav--enlaces">Productos</a>
+                <a class="armar nav--enlaces" data-toggle="modal" data-target="#pedido" style="cursor: pointer;">Arma tu
+                    pedido</a>
+                <a href="nosotros.html" class="nav--enlaces">Nosotros</a>
+                <a href="contacto.html" class="nav--enlaces">Contacto</a>
+            </div>
+            <!-- icono -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </section>
+
+        <nav class="header__nav__notMobile">
+            <a href="index.html" class="nav--enlaces">Inicio</a>
+            <a href="productos.html" class="nav--enlaces">Productos</a>
+            <a class="armar nav--enlaces" data-toggle="modal" data-target="#pedido" style="cursor: pointer;">Arma tu
+                pedido</a>
+            <a href="nosotros.html" class="nav--enlaces">Nosotros</a>
+            <a href="contacto.html" class="nav--enlaces">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="container contacto">
+        <!-- FORMULARIO DATOS DEL CLIENTE-->
+        <form action="#" class="form">
+
+            <section class="input-group mb-3 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Nombre completo</span>
+                </div>
+                <input type="text" name="nombre" class="form-control">
+            </section>
+
+            <section class="input-group mb-3 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Correo electronico</span>
+                </div>
+                <input type="text" name="mail" class="form-control">
+            </section>
+
+            <section class="input-group mb-3 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Telefono</span>
+                </div>
+                <input type="text" id="tel" class="form-control" maxlength="15">
+            </section>
+
+            <select name="motivo" class="custom-select">
+                <option value="null" selected>Motivo del contacto</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Sugerencia">Sugerencia</option>
+            </select>
+
+            <section class="form-group">
+                <label for="comment">Observaciones:</label>
+                <textarea class="form-control" rows="10" name="comment"></textarea>
+            </section>
+
+            <section class="botones">
+                <button type="submit" class="btn btn-outline-primary" id="pedir">Enviar</button>
+                <button type="reset" class="btn btn-outline-danger" id="cancelar">Cancelar</button>
+            </section>
+
+            <!-- cartas con info de empresa -->
+            <section class="container" id="cartas">
+                <section id="accordion">
+                    <section class="card">
+
+                        <article class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#donde">
+                                ¿Dónde estamos?
+                            </a>
+                        </article>
+
+                        <article id="donde" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Estamos en el barrio de Chacarita, Capital Federal.</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.040910316106!2d-58.46390197175702!3d-34.590998639585415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5fcdd2212d3%3A0xc13780817b15d2d8!2sChacarita%2C%20CABA!5e0!3m2!1ses!2sar!4v1605556516258!5m2!1ses!2sar"
+                                    width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </article>
+                    </section>
+                    <!-- carta de postulacion -->
+                    <article class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#postular">
+                                ¡Trabaja con nosotros!
+                            </a>
+                        </div>
+                        <section id="postular" class="collapse" data-parent="#accordion">
+                            <article class="card-body">
+                                <p>Envianos tu CV y contanos sobre vos. Si tu perfil es el que necesitamos y estamos
+                                    buscando, nos estaremos comunicando con vos :)</p>
+                                <article class="container mt-3">
+                                    <form action="#">
+                                        <div class="custom-file mb-3">
+                                            <input type="file" class="custom-file-input" id="archivo" name="filename">
+                                            <label class="custom-file-label" for="archivo">Elegir archivo</label>
+                                        </div>
+
+                                        <section class="botones">
+                                            <button type="submit" class="btn btn-outline-primary">Postularme</button>
+                                            <button type="reset" class="btn btn-outline-danger">Cancelar</button>
+                                        </section>
+                                    </form>
+                                </article>
+                            </article>
+                        </section>
+                    </article>
+
+                </section>
+            </section>
+        </form>
+
+    </section>
+
+    <section class="modal fade" id="pedido">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Ordena tus ganaches</h4>
+                </div>
+
+                <!-- Modal body && form -->
+                <form action="#">
+                    <section class="cointainer modal-body modal-datosContacto">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre completo">
+                        <input type="email" class="form-control" name="correo" placeholder="Correo electronico">
+                        <input type="text" class="form-control" name="tel" placeholder="Telefono de contacto">
+                    </section>
+
+                    <section class="modal-footer container">
+                        <div class="card cardProductos">
+                            <img src="/img/almendra.png">
+                            <h1>Almendra</h1>
+                            <p class="desc">
+                                Chocolate semi amargo y almendra
+                            </p>
+
+                            <div class="container">
+                                <span id="cantidad" name="cantAlm">0</span>
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-outline-dark">+</button>
+                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardProductos">
+                            <img src="/img/amarga.png">
+                            <h1>Almendra</h1>
+                            <p class="desc">
+                                Chocolate semi amargo y almendra
+                            </p>
+
+                            <div class="container">
+                                <span id="cantidad">0</span>
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-outline-dark">+</button>
+                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardProductos">
+                            <img src="/img/frambuesa.png">
+                            <h1>Almendra</h1>
+                            <p class="desc">
+                                Chocolate semi amargo y almendra
+                            </p>
+
+                            <div class="container">
+                                <span id="cantidad">0</span>
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-outline-dark">+</button>
+                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardProductos">
+                            <img src="/img/maracuya.png">
+                            <h1>Almendra</h1>
+                            <p class="desc">
+                                Chocolate semi amargo y almendra
+                            </p>
+
+                            <div class="container">
+                                <span id="cantidad">0</span>
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-outline-dark">+</button>
+                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardProductos">
+                            <img src="/img/salted.png">
+                            <h1>Almendra</h1>
+                            <p class="desc">
+                                Chocolate semi amargo y almendra
+                            </p>
+
+                            <div class="container">
+                                <span id="cantidad">0</span>
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-outline-dark">+</button>
+                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal-body container modal-envio">
+                        <h4>Modo de envio</h4>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="deliv" name="envios" value="deliv" class="custom-control-input">
+                            <label class="custom-control-label" for="deliv">Delivery</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="taway" name="envios" value="taway" class="custom-control-input">
+                            <label class="custom-control-label" for="taway">Take away</label>
+                        </div>
+                    </section>
+
+
+                    <!-- Modal Footer -->
+                    <section class="botones modal-footer">
+                        <button type="submit" class="btn btn-outline-primary" id="pedir">Pedir <i
+                                class="far fa-heart"></i></button>
+                        <button type="reset" class="btn btn-outline-danger" data-dismiss="modal" id="cancelar">Cancelar
+                            <i class="fas fa-heart-broken"></i></button>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav>
+            <section class="footer__fly">
+                <a class="footer--colors" href="#"> 🎈</a>
+            </section>
+
+            <section class="footer__redes">
+                <a class="footer--colors footer--space" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="footer--colors footer--space" href="#"><i class="fab fa-facebook-square"></i></a>
+            </section>
+
+        </nav>
+    </footer>
+
+    <script src="js/navMobile.js"></script>
+    <script src="js/archivo.js"></script>
+
+</body>
+
+</html>
