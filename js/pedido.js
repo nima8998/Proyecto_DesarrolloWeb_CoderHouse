@@ -1,16 +1,14 @@
-var cant = 0;
-document.getElementById("cantidad").innerHTML = cant;
-
-function up(){
-  if(cant >= 0 ){
-    cant ++;
-  }
-document.getElementById("cantidad").innerHTML = cant;
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 0);
+    value = isNaN(value) ? 0 : value;
+    value ++;
+    document.getElementById('number').value = value;
 }
 
-function down(){
-  if(cant < 10 ){
-    cant --;
-  }
-document.getElementById("cantidad").innerHTML = cant;
+function decrementValue(){
+var value = parseInt(document.getElementById('number').value, 0);
+    value = isNaN(value) ? 0 : value;
+    value --;
+    document.getElementById('number').value = value;
 }
