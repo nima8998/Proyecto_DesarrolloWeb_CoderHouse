@@ -13,17 +13,23 @@
     text-align: center;
     padding: 2rem;
 
-    .nos1 {
-        grid-area: nos1;
-    }
-
     .logo {
         grid-area: logo;
         justify-self: center;
     }
 
+    .nos1 {
+        grid-area: nos1;
+    }
+
+
     .nos2 {
         grid-area: nos2;
+    }
+
+    p{
+        margin: 1rem;
+        max-width: 800px;
     }
 
 }

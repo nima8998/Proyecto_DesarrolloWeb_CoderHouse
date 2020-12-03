@@ -121,13 +121,16 @@
   align-items: center;
   text-align: center;
   padding: 2rem; }
-  .nosotros .nos1 {
-    grid-area: nos1; }
   .nosotros .logo {
     grid-area: logo;
     justify-self: center; }
+  .nosotros .nos1 {
+    grid-area: nos1; }
   .nosotros .nos2 {
     grid-area: nos2; }
+  .nosotros p {
+    margin: 1rem;
+    max-width: 800px; }
 
 .modal-datosContacto input {
   margin: 1rem;
