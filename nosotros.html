@@ -83,6 +83,7 @@
     </main>
 
     <section class="modal fade" id="pedido">
+
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <!-- Modal Header -->
@@ -99,6 +100,7 @@
                     </section>
 
                     <section class="modal-footer container">
+
                         <div class="card cardProductos">
                             <img src="img/almendra.png">
                             <h1>Almendra</h1>
@@ -107,74 +109,88 @@
                             </p>
 
                             <div class="container">
-                                <span id="cantidad" name="cantAlm">0</span>
+                                <input type="text" id="alm" name="alm" placeholder="0"></input>
                                 <div class="btn-group-vertical">
-                                    <button type="button" class="btn btn-outline-dark">+</button>
-                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                    <button type="button" class="btn btn-outline-black"
+                                        onclick="incrementValue('alm')">+</button>
+                                    <button type="button" class="btn btn-outline-black"
+                                        onclick="decrementValue('alm')">-</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card cardProductos">
                             <img src="img/amarga.png">
-                            <h1>Almendra</h1>
+                            <h1>Semi amarga</h1>
                             <p class="desc">
-                                Chocolate semi amargo y almendra
+                                Ganache semi amarga.
                             </p>
 
                             <div class="container">
-                                <span id="cantidad">0</span>
+                                <input id="semiAlm" name="semiAlm" placeholder="0"></input>
+
                                 <div class="btn-group-vertical">
-                                    <button type="button" class="btn btn-outline-dark">+</button>
-                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="incrementValue('semiAlm')">+</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="decrementValue('semiAlm')">-</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card cardProductos">
                             <img src="img/frambuesa.png">
-                            <h1>Almendra</h1>
+                            <h1>Frambuesa</h1>
                             <p class="desc">
-                                Chocolate semi amargo y almendra
+                                Frambuesa y chocolate blanco.
                             </p>
 
                             <div class="container">
-                                <span id="cantidad">0</span>
+                                <input id="frambu" name="frambu" placeholder="0"></input>
+
                                 <div class="btn-group-vertical">
-                                    <button type="button" class="btn btn-outline-dark">+</button>
-                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="incrementValue('frambu')">+</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="decrementValue('frambu')">-</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card cardProductos">
                             <img src="img/maracuya.png">
-                            <h1>Almendra</h1>
+                            <h1>Maracuya</h1>
                             <p class="desc">
-                                Chocolate semi amargo y almendra
+                                Chocolate blanco y maracuyá.
                             </p>
 
                             <div class="container">
-                                <span id="cantidad">0</span>
+                                <input id="marac" name="marac" placeholder="0"></input>
+
                                 <div class="btn-group-vertical">
-                                    <button type="button" class="btn btn-outline-dark">+</button>
-                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="incrementValue('marac')">+</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="decrementValue('marac')">-</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card cardProductos">
                             <img src="img/salted.png">
-                            <h1>Almendra</h1>
+                            <h1>Salted</h1>
                             <p class="desc">
-                                Chocolate semi amargo y almendra
+                               Ganache con caramelo salteado.
                             </p>
 
                             <div class="container">
-                                <span id="cantidad">0</span>
+                                <input id="salted" name="salted" placeholder="0"></input>
+
                                 <div class="btn-group-vertical">
-                                    <button type="button" class="btn btn-outline-dark">+</button>
-                                    <button type="button" class="btn btn-outline-dark">-</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="incrementValue('salted')">+</button>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="decrementValue('salted')">-</button>
                                 </div>
                             </div>
                         </div>
@@ -204,6 +220,7 @@
                 </form>
             </div>
         </div>
+
     </section>
 
     <footer class="footer">
@@ -221,6 +238,7 @@
         </nav>
     </footer>
 
+    <script src="js/pedido.js"></script>
     <script src="js/navMobile.js"></script>
 </body>
 

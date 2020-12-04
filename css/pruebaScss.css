@@ -167,6 +167,11 @@
       opacity: 0.7; }
     .cardProductos button:focus {
       box-shadow: none; }
+  .cardProductos input {
+    max-width: 3rem;
+    text-decoration: none;
+    border: none;
+    background-color: white; }
 
 .modal-envio {
   padding-top: 3rem; }
