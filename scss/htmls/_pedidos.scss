@@ -1,0 +1,64 @@
+.modal-datosContacto {
+    input {
+        margin: 1rem;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.cardProductos {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+    max-height: auto;
+    margin: auto;
+    padding: .5rem;
+    text-align: center;
+
+    #cant {
+        color: grey;
+        font-size: 2rem;
+    }
+
+    .desc {
+        color: grey;
+        font-size: .8rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        padding: .4rem;
+        margin-left: 1rem;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        width: 75%;
+        font-size: 1rem;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    input{
+        max-width: 3rem;
+        text-decoration: none;
+        border: none;
+        background-color: white;
+    }
+}
+
+.modal-envio{
+    padding-top: 3rem;
+}

@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    justify-content: center;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    z-index: 2;
+
+    .nav--enlaces{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $secondColor;
+        font-size: large;
+        margin-left: .8rem;
+        transition: color .5s;
+
+        &:hover {
+            color: $secondColorHover;
+        }
+    }
+
+    .armar {
+        color: $mainColor;
+        animation-name: armar;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-duration: 2s;
+
+        &:hover {
+            color: $mainColorHover;
+            animation-name: none;
+        }
+
+        @keyframes armar {
+            0% {
+                opacity: 60%;
+            }
+
+            50% {
+                opacity: 120%;
+            }
+
+            100% {
+                opacity: 60%;
+            }
+        }
+
+    }
+}

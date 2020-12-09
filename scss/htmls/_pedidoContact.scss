@@ -1,0 +1,28 @@
+.contacto {
+    display: grid;
+    grid-template-rows: repeat(3 .8fr);
+    row-gap: 3rem;
+    grid-template-areas:
+        "."
+        "form"
+        "."
+    ;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+        grid-area: form;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+.botones,
+.form-check {
+    margin: 1rem;
+}
+
+#cartas {
+    color: black;
+}
