@@ -10,7 +10,8 @@
 
     .header__nav__mobile {
         overflow: hidden;
-        position: block;
+        position: fixed;
+        display: block;
         background-image: linear-gradient(to top,
                 #000000da,
                 rgb(0, 0, 0));
@@ -241,7 +242,6 @@
     .contacto {
         .form {
             text-align: center;
-
             textarea {
                 min-width: 650px;
                 max-height: 400px;
