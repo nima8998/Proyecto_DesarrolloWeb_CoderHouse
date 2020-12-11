@@ -1,5 +1,5 @@
 
-function menu() {
+function myFunction() {
   var x = document.getElementById("enlaces");
   if (x.style.display == "block") {
     x.style.display = "none";
