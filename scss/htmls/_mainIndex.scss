@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-area: main;
-    grid-template-rows: repeat(3 .8fr);
+    grid-template-rows: .2fr .1fr .1fr;
     row-gap: 3rem;
     grid-template-areas:
         "section1"

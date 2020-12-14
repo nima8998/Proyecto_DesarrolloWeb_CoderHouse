@@ -1,6 +1,6 @@
 .productos {
     display: grid;
-    grid-template-rows: .3fr 1fr .2fr;
+    grid-template-rows: .1fr 1fr .2fr;
     grid-gap: .2rem;
     grid-template-areas:
         "header"
@@ -13,10 +13,6 @@
     .header {
         grid-area: header;
         color: white;
-
-        h1{
-            font-size: 1.5rem;
-        }
     }
 
     .listado {
