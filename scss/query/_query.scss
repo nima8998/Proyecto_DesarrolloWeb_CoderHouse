@@ -54,7 +54,6 @@
     .topnav a.icon {
         font-size: x-large;
         position: fixed;
-        display: block;
         right: 0;
         top: .5rem;
     }
@@ -111,6 +110,10 @@
             width: 15rem;
         }
 
+    }
+
+    #titulo{
+        text-align: center;
     }
 
     /* query pedidos */
@@ -200,7 +203,7 @@
 
         .header {
             padding: 2rem;
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
     }
@@ -233,8 +236,8 @@
         }
 
         .header {
-            padding: 10rem;
-            font-size: 4rem;
+            padding: 5rem;
+            font-size: 2rem;
         }
     }
 
@@ -242,6 +245,7 @@
     .contacto {
         .form {
             text-align: center;
+
             textarea {
                 min-width: 650px;
                 max-height: 400px;
