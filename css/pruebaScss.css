@@ -222,10 +222,13 @@ body {
     display: block;
     background-image: linear-gradient(to top, #000000da, black); }
     .header__nav__mobile #enlaces {
+      float: left;
       display: none;
-      position: fixed;
-      background: #000000;
-      height: 100vh; }
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px; }
     .header__nav__mobile a {
       color: white;
       padding: 14px 16px;
