@@ -85,7 +85,7 @@
     flex-flow: row nowrap;
     justify-content: space-evenly; }
     .productos .listado img {
-      width: 25rem;
+      width: 20rem;
       justify-content: space-around; }
   .productos .footer {
     grid-area: footer; }
@@ -147,8 +147,6 @@
   .cardProductos .desc {
     color: grey;
     font-size: .8rem; }
-  .cardProductos h1 {
-    font-size: 1rem; }
   .cardProductos button {
     border: none;
     outline: 0;
@@ -249,7 +247,6 @@ body {
   .topnav a.icon {
     font-size: x-large;
     position: fixed;
-    display: block;
     right: 0;
     top: .5rem; }
   .footer {
@@ -278,6 +275,8 @@ body {
     z-index: 1; }
     .productos .listado img {
       width: 15rem; }
+  #titulo {
+    text-align: center; }
   /* query pedidos */
   .pedido {
     padding: 2rem; }
@@ -328,7 +327,7 @@ body {
       justify-content: space-around; }
     .productos .header {
       padding: 2rem;
-      font-size: 3rem; } }
+      font-size: 2rem; } }
 
 /* Dekstop */
 @media only screen and (min-width: 992px) {
@@ -346,8 +345,8 @@ body {
     flex-flow: row wrap;
     justify-content: space-around; }
   .productos .header {
-    padding: 10rem;
-    font-size: 4rem; }
+    padding: 5rem;
+    font-size: 2rem; }
   .pedido .form,
   .contacto .form {
     text-align: center; }
