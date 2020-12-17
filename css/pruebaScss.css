@@ -80,6 +80,8 @@
   .productos .header {
     grid-area: header;
     color: white; }
+    .productos .header h1 {
+      font-size: x-large; }
   .productos .listado {
     grid-area: listado;
     flex-flow: row nowrap;
@@ -141,6 +143,8 @@
   margin: auto;
   padding: .5rem;
   text-align: center; }
+  .cardProductos h1 {
+    font-size: 1rem; }
   .cardProductos #cant {
     color: grey;
     font-size: 2rem; }
